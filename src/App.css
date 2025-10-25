@@ -1,0 +1,119 @@
+/* General body styling */
+body {
+  background-color: #0f0f1e;
+  color: #e7fafd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #1db7dd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0aa3c5;
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #1e1e2f !important;
+  color: #e7fafd !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Card images */
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1db7dd;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0aa3c5;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+  background-color: #121318;
+  color: #e7fafd;
+  border: 1px solid #333;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #121318;
+  color: #e7fafd;
+  border-color: #1db7dd;
+  box-shadow: none;
+}
+
+/* Container spacing */
+.container {
+  padding: 20px;
+}
+
+/* Headings */
+h3 {
+  color: #e7fafd;
+}
+
+/* Modals */
+.modal-content {
+  background-color: #1e1e2f;
+  color: #e7fafd;
+  border-radius: 10px;
+}
+
+/* FilterBar */
+.row.g-2 > .col-md-3,
+.row.g-2 > .col-md-2,
+.row.g-2 > .col-md-1 {
+  margin-bottom: 10px;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  color: #1db7dd !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card-img-top {
+    max-height: 120px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Form card */
+.card.p-4 {
+  border-radius: 15px;
+}
+
+/* Error messages */
+p.error {
+  color: #ff6b6b;
+  font-weight: 500;
+}

@@ -9,7 +9,7 @@ export const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     const storedProducts = localStorage.getItem("products");
-    console.log("storedProducts",storedProducts)
+    console.log("storedProducts", storedProducts)
     if (storedProducts) {
       setProducts(JSON.parse(storedProducts));
     }
@@ -19,7 +19,7 @@ export const ProductProvider = ({ children }) => {
     return new Promise((resolve) => {
       setTimeout(() => {
         setProducts((prevProducts) => {
-          const updatedProducts = [...prevProducts, newProduct];
+          const updatedProducts = [newProduct, ...prevProducts];
           localStorage.setItem("products", JSON.stringify(updatedProducts));
           return updatedProducts;
         });
